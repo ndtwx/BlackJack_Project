@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game - Result</title>
+</head>
+<body>
+    <h1>Blackjack Game Result</h1>
+
+    <h2>Your Cards</h2>
+    <p>{{ user_cards }}</p>
+    <p>{{ user_score }}</p>
+
+    <h2>Computer's Cards</h2>
+    <p>{{ computer_cards }}</p>
+    <p>{{ computer_score }}</p>
+
+    <h2>Result</h2>
+    <p>{{ result }}</p>
+
+    <form action="/play" method="get">
+        <input type="submit" value="Restart Game">
+    </form>
+</body>
+</html>
